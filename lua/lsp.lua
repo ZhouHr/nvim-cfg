@@ -110,8 +110,18 @@ lspconfig.rust_analyzer.setup({
 				-- Whether to show inlay hints after a closing } to indicate what item it belongs to.
 				closingBraceHints = true,
 			},
+            assist = {
+                importGranularity = "module",
+                importPrefix = "by_self",
+            },
+            cargo = {
+                loadOutDirsFromCheck = true,
+            },
             checkOnSave = {
                 allTargets = false,
+            },
+            procMacro = {
+                enable = true,
             },
 		},
 	},
