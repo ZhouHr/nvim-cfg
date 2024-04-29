@@ -10,7 +10,7 @@ require('mason').setup({
 
 require('mason-lspconfig').setup({
     -- A list of servers to automatically install if they're not already installed
-    ensure_installed = { 'pylsp', 'lua_ls', "bashls", 'rust_analyzer' },
+    ensure_installed = { 'pylsp', 'lua_ls', 'rust_analyzer' },
 })
 
 
@@ -99,7 +99,6 @@ lspconfig.lua_ls.setup({
 	},
 })
 
-lspconfig.bashls.setup({})
 
 -- source: https://rust-analyzer.github.io/manual.html#nvim-lsp
 lspconfig.rust_analyzer.setup({
